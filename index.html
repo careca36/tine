@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História de Amor</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link para o CSS -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Nossa História de Amor</h1>
+        <p>Momentos especiais</p>
+    </header>
+
+    <!-- Botão para se declarar -->
+    <div class="declare-container">
+        <button id="declareButton">Me Declarar</button>
+        <textarea id="declarationText" placeholder="Digite sua declaração de amor aqui..." style="display:none;"></textarea>
+        <button id="submitDeclaration" style="display:none;">Enviar Declaração</button>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="photo">
+            <img src="fotos/foto1.jpeg" alt="Momento especial 1" onclick="openLightbox(this)">
+            <p>Minha pequena princesinha.</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto2.jpeg" alt="Momento especial 2" onclick="openLightbox(this)">
+            <p>Comendo juntos</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto3.jpeg" alt="Momento especial 3" onclick="openLightbox(this)">
+            <p>Em algumas festas</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto4.jpeg" alt="Momento especial 4" onclick="openLightbox(this)">
+            <p>Minha lindinha</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto5.jpeg" alt="Momento especial 5" onclick="openLightbox(this)">
+            <p>Nosso primeiro amor</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto6.jpeg" alt="Momento especial 6" onclick="openLightbox(this)">
+            <p>Nosso destino.</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto7.jpeg" alt="Momento especial 7" onclick="openLightbox(this)">
+            <p>Juntos</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto8.jpeg" alt="Momento especial 8" onclick="openLightbox(this)">
+            <p>Longe de casa</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto9.jpeg" alt="Momento especial 9" onclick="openLightbox(this)">
+            <p>Nas melhores paisagens</p>
+        </div>
+        <div class="photo">
+            <img src="fotos/foto10.jpeg" alt="Momento especial 10" onclick="openLightbox(this)">
+            <p>Suas conquistas</p>
+        </div>
+    </section>
+
+    <!-- Lightbox (Janela de Exibição) -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Imagem ampliada">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Feito com muito amor e carinho .</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
